@@ -1,13 +1,13 @@
 # __CREATION OF A BUSINESS INTELLIGENCE SYSTEM__
 
 ## Summary of the project:
-- Creation of Staging Database and tables in SQL-Server <a href="https://github.com/ninaroal/sql-rdbms/edit/main/README.md?plain=1#L23" title="Title"> -> HERE</a>
-- ETL of the CSV files to a staging DB using ETL Open Source "Pentaho" (PDI) <a href="https://github.com/ninaroal/sql-rdbms/edit/main/README.md?plain=1#L90" title="Title"> -> HERE</a>
-- Creation of Datamart and tables in SQL-Server <a href="https://github.com/ninaroal/sql-rdbms/edit/main/README.md?plain=1#L101" title="Title"> -> HERE</a>
-- Aplying transformations to load the datamart using PDI <a href="https://github.com/ninaroal/sql-rdbms/edit/main/README.md?plain=1#L117" title="Title"> -> HERE</a>
+- Creation of Staging Database and tables in SQL-Server <a href="https://github.com/ninaroal/sql-rdbms/main/README.md?plain=1#L23" title="Title"> -> HERE</a>
+- ETL of the CSV files to a staging DB using ETL Open Source "Pentaho" (PDI) <a href="https://github.com/ninaroal/sql-rdbms/main/README.md?plain=1#L90" title="Title"> -> HERE</a>
+- Creation of Datamart and tables in SQL-Server <a href="https://github.com/ninaroal/sql-rdbms/main/README.md?plain=1#L101" title="Title"> -> HERE</a>
+- Aplying transformations to load the datamart using PDI <a href="https://github.com/ninaroal/sql-rdbms/main/README.md?plain=1#L117" title="Title"> -> HERE</a>
 - Performing SQL queries in SQL-Server <a href="https://github.com/ninaroal/sql-rdbms/edit/main/README.md?plain=1#L197" title="Title"> -> HERE</a>
-- Creation of a report in Power BI accessing the information of the loaded datamart <a href="https://github.com/ninaroal/sql-rdbms/edit/main/README.md?plain=1#L213" title="Title"> -> HERE</a>
-- Creation of Visuals/Dashboards in PowerBI <a href="https://github.com/ninaroal/sql-rdbms/edit/main/README.md?plain=1#L241" title="Title"> -> HERE</a>
+- Creation of a report in Power BI accessing the information of the loaded datamart <a href="https://github.com/ninaroal/sql-rdbms/main/README.md?plain=1#L213" title="Title"> -> HERE</a>
+- Creation of Visuals/Dashboards in PowerBI <a href="https://github.com/ninaroal/sql-rdbms/main/README.md?plain=1#L241" title="Title"> -> HERE</a>
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
