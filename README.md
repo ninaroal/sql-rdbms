@@ -21,7 +21,8 @@ Then the database name “WWBI_STG” was set:
 
 ![grafik](https://user-images.githubusercontent.com/84467687/193496305-ef92e0c3-81ca-4ca2-8a4d-c815276e6d26.png)
 
-**See Script here** https://github.com/ninaroal/sql-rdbms/blob/main/Creating_DATAMART_DB_TABLES.sql?plain=1
+__<p>SEE SCRIPT <a href="https://github.com/ninaroal/sql-rdbms/blob/main/Creating_STAGING_DB_TABLES.sql?plain=1" title="Title"> HERE</a> </p>__
+
 ![grafik](https://user-images.githubusercontent.com/84467687/193496340-932821ac-94ba-4ca6-a6c3-3fcdb286b22f.png)
 
 **b. Creation of the staging database tables**
@@ -30,7 +31,7 @@ The WWBI_STG database tables have been created with code through SQL Server. To 
  
  ![grafik](https://user-images.githubusercontent.com/84467687/193496457-a70aeac4-122f-4950-95a0-b76329613f21.png)
 
-**See Script here**
+__<p>SEE SCRIPT <a href="https://github.com/ninaroal/sql-rdbms/blob/main/Creating_STAGING_DB_TABLES.sql?plain=1" title="Title"> HERE</a> </p>__
 ![grafik](https://user-images.githubusercontent.com/84467687/193496483-dfd44f37-ca41-484e-9f6b-1281fe1dbef9.png)
 ![grafik](https://user-images.githubusercontent.com/84467687/193496490-3d163932-a57e-4cfe-97fc-4c89d409a95f.png)
 
@@ -53,7 +54,7 @@ Finally, we click on “share” to create the transformation connection to the 
 115 rows have been loaded into the staging country table and 10005 rows into the staging data table:      
 ![grafik](https://user-images.githubusercontent.com/84467687/193496628-eb1796dd-3ede-46b9-afc9-771c497fd05a.png)
 
-**See Script here**
+__<p>SEE SCRIPT <a href="https://github.com/ninaroal/sql-rdbms/blob/main/Questions_STG_TABLES.sql?plain=1" title="Title"> HERE</a> </p>__
 ![grafik](https://user-images.githubusercontent.com/84467687/193496754-4d5d8729-1314-4f2b-8166-90eb324c4a7b.png)
 ![grafik](https://user-images.githubusercontent.com/84467687/193496758-00ba6e8d-d80f-48e9-b6d6-11a40274d1e3.png)
 
@@ -91,13 +92,13 @@ As with the staging database we will create the database using the SSMS wizard. 
 
 ![grafik](https://user-images.githubusercontent.com/84467687/193496974-50c0b0e2-da64-4138-b471-7beb1bc4f1d7.png) 
 
-**See Script here**
+__<p>SEE SCRIPT <a href="https://github.com/ninaroal/sql-rdbms/blob/main/Creating_DATAMART_DB_TABLES.sql?plain=1" title="Title"> HERE</a> </p>__
 ![grafik](https://user-images.githubusercontent.com/84467687/193497053-ef060a95-b041-45e6-a55f-1caf92558a73.png)
 
 - Creation of staging database tables
 The tables of the WWBI_DWH database have been created in the same way as the staging database with code through SQL Server:
 
-**See Script here**
+__<p>SEE SCRIPT <a href="https://github.com/ninaroal/sql-rdbms/blob/main/Questions_DATAMART_TABLEs.sql?plain=1" title="Title"> HERE</a> </p>__
 ![grafik](https://user-images.githubusercontent.com/84467687/193497069-3eacdd26-0baa-4b88-8f2f-3f4e5a9b341a.png)
 ![grafik](https://user-images.githubusercontent.com/84467687/193497079-0a5836eb-16ab-4aa8-9955-4a037b43b587.png)
 
@@ -184,14 +185,14 @@ When executing the job we obtain the following log. As you can see, the job was 
 
 **5) Answer the following questions by performing SQL queries:**
 **How many countries belong to each income group?**
-**Query:** **See Script here**
+**Query:** __<p>SEE SCRIPT <a href="https://github.com/ninaroal/sql-rdbms/blob/main/Questions_DATAMART_TABLEs.sql?plain=1" title="Title"> HERE</a> </p>__
 ![grafik](https://user-images.githubusercontent.com/84467687/193497606-e27513c1-b222-49ef-a4fc-9874addc8c8a.png)
 
 **Result:**
 ![grafik](https://user-images.githubusercontent.com/84467687/193497613-3c0f9c1c-c1ec-4784-b149-6464b8900844.png)
 
 **How many metrics are there, that have non-zero value in the year 2000?**
-**Query:** **See Script here**
+**Query:** __<p>SEE SCRIPT <a href="https://github.com/ninaroal/sql-rdbms/blob/main/Questions_DATAMART_TABLEs.sql?plain=1" title="Title"> HERE</a> </p>__
 ![grafik](https://user-images.githubusercontent.com/84467687/193497627-e3f74f97-f24a-471a-8790-fcbbb9990c8f.png)
  
 **Result:**
