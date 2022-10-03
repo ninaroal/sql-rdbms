@@ -21,7 +21,7 @@ Then the database name “WWBI_STG” was set:
 
 ![grafik](https://user-images.githubusercontent.com/84467687/193496305-ef92e0c3-81ca-4ca2-8a4d-c815276e6d26.png)
 
-**See Script here**
+**See Script here** https://github.com/ninaroal/sql-rdbms/blob/main/Creating_DATAMART_DB_TABLES.sql?plain=1
 ![grafik](https://user-images.githubusercontent.com/84467687/193496340-932821ac-94ba-4ca6-a6c3-3fcdb286b22f.png)
 
 **b. Creation of the staging database tables**
@@ -107,7 +107,7 @@ A transformation is first created with the connection to the DB "WWBI_DWH" in SS
 
 ![grafik](https://user-images.githubusercontent.com/84467687/193497109-798fa10c-a9b6-4501-9c8d-6f9022485974.png)
 
-3.3) Answer the following questions:
+**3.3) Answer the following questions:**
 - How was the “dim_metrica” table loaded? Where are you from?
 The DIM_METRICA table has been loaded through a "Table Entry", whose origin comes from the staging database, specifically from the STG_DATA table.
 
@@ -182,7 +182,7 @@ When executing the job we obtain the following log. As you can see, the job was 
 
 ![grafik](https://user-images.githubusercontent.com/84467687/193497485-b30b9604-a505-48bc-80c5-1a8e35ab4355.png)
 
-5) Answer the following questions by performing SQL queries:
+**5) Answer the following questions by performing SQL queries:**
 **How many countries belong to each income group?**
 **Query:** **See Script here**
 ![grafik](https://user-images.githubusercontent.com/84467687/193497606-e27513c1-b222-49ef-a4fc-9874addc8c8a.png)
@@ -198,8 +198,8 @@ When executing the job we obtain the following log. As you can see, the job was 
 ![grafik](https://user-images.githubusercontent.com/84467687/193497637-1e5ca5e5-8ba7-4889-891e-f517476f8f41.png)
 
 
-6) Create a report in Power BI accessing the information of the newly loaded datamart
-- Indicate the structure of the data model. Define the tables, their relationships and cardinalities.
+**6) Create a report in Power BI accessing the information of the newly loaded datamart**
+**- Indicate the structure of the data model. Define the tables, their relationships and cardinalities.**
 As a first step, we import the data from the SQL Server database into PowerBI. The easiest method to do this is by pressing the “SQL Server” Button on the Start menu.
 
 ![grafik](https://user-images.githubusercontent.com/84467687/193497768-a7f48517-ff0a-4763-be45-8f45a2f5729a.png)
@@ -233,7 +233,7 @@ The metrics to be used are the following:
 “Public sector employment as a share of paid employment”.
 “Public sector employment as a share of formal employment”.
 
-##**Evolution over time of "Public sector employment as part of paid employment" and "Public sector employment as part of formal employment" for Argentina **
+## **Evolution over time of "Public sector employment as part of paid employment" and "Public sector employment as part of formal employment" for Argentina **
 ![grafik](https://user-images.githubusercontent.com/84467687/193498408-db83bb9e-5508-495e-87ac-23080c1a449b.png)
 
 In general, it can be seen that public sector employment in Argentina represents more than 30% of all formal jobs and approximately 20% of all paid jobs. A similar trend is also observed for both indicators. The two peaks between 2001 and 2004, and between 2012 and 2013, are striking.
@@ -260,7 +260,7 @@ The metrics to be used are the following:
 “Mean age of private paid employees”.
 “Mean age of public paid employees”.
 
-##**Median age of private and public sector employees by region**
+## **Median age of private and public sector employees by region**
 ![grafik](https://user-images.githubusercontent.com/84467687/193498360-f5cbff0b-4fc6-4972-9cc0-6cbbdc83c7cc.png)
 
 As can be seen in the graph, with the exception of North America, public sector workers are slightly older on average than private sector workers.
@@ -269,45 +269,45 @@ As can be seen in the graph, with the exception of North America, public sector 
 A clustered column and line chart has been used. Column charts are often used for discrete or numerical comparison between a set of categories. And the grouped column charts are of great use to compare all the categories, if we add another variable.
 In this way we can see in the previous graph, that each of the categories (in this case the regions) are grouped by two columns, where the orange column represents the average age of private employees and the blue column represents the average age of public employees. Additionally, we have the green line that indicates the general average age of public and private workers.
 
-**2. What field has been used to filter the data?
+**2. What field has been used to filter the data?**
 DESC_INDICATOR
 
 ![grafik](https://user-images.githubusercontent.com/84467687/193498325-4db25e2a-8325-46d1-9e1a-a095ebe4d283.png) 
 
-**3. What field has been used for the axis of the graph?
+**3. What field has been used for the axis of the graph?**
 DESC_REGION
 
-**4. In the legend?
+**4. In the legend?**
 DESC_INDICATOR
 
-**5. And in the values?
+**5. And in the values?**
 IN_VALUE
 
 **7.3) Make a graph of the average relative weight of technical positions in the private and public sectors over time. The graph should allow you to see the total volume of each metric and the total of both. The metrics to be used are the following:**
 “Relative wage of technicians in private sector (using clerk as reference)”.
 “Relative wage of technicians in public sector (using clerk as reference)”
 
-##**Relative average wage of technical positions in the private and public sectors over time **
+## **Relative average wage of technical positions in the private and public sectors over time **
 ![grafik](https://user-images.githubusercontent.com/84467687/193498301-3f5fac42-b0fd-48c8-9a2b-28f697dc6e16.png)
 
 Using the salary of a secretary as a base (see green line), the relative average weight of the salary of technical positions in the private sector is greater than that of technical positions in the public sector. Especially in the years 2009 and 2014.
 
-**1. What type of graph has been used and why?
+**1. What type of graph has been used and why?**
 Line charts are best for plotting time series. Specifically, a stacked area chart was used, which is a variation of line charts, which represent the volume, as well as the time period in which it occurs.
 In addition, you can see the total volume of each metric and the total of both.
 
-**2. What field has been used to filter the data?
+**2. What field has been used to filter the data?**
 DESC_INDICATOR
 
 ![grafik](https://user-images.githubusercontent.com/84467687/193498262-0f96d579-88f8-486e-9114-081ae5286b44.png)
 
-**3. What field has been used for the axis of the graph?
+**3. What field has been used for the axis of the graph?**
 ID_YEAR
 
-**4. In the legend?
+**4. In the legend?**
 DESC_INDICATOR
 
-**5. And in the values?
+**5. And in the values?**
 Average of IN_VALUE
 
 **7.4) Obtain the average weight by region of spending on public employees with respect to GDP and public spending**
@@ -315,24 +315,24 @@ The metrics to be used are the following:
 “Wage bill as a percentage of GDP”.
 “Wage bill as a percentage of Public Expenditure”.
 
-##**Average weight by region of spending on public employees with respect to GDP and public spending**
+## **Average weight by region of spending on public employees with respect to GDP and public spending**
 ![grafik](https://user-images.githubusercontent.com/84467687/193498208-74050940-2974-4c89-822b-6459ee53903d.png)
 
 It can be seen that spending on public employees with respect to GDP is greater than spending on public employees with respect to public spending. This makes sense because public spending is part of GDP.
 
-**1. What type of graph has been used and why?
+**1. What type of graph has been used and why?**
 A horizontal stacked column chart has been used. Stacked charts allow you to compare totals and subtotals for subcategories. The total percentage average of each one of the indicators can be observed in the first level and, in turn, the weight that each region has in this indicator can be seen. This is how it is seen, for example, that North America has a weight of spending on public employees greater than that of the other regions.
 
-**2. What field has been used to filter the data?
+**2. What field has been used to filter the data?**
 DESC_INDICATOR
 
 ![grafik](https://user-images.githubusercontent.com/84467687/193498189-f760754a-d88a-47b0-928a-f4dae2e88a91.png)
 
-**3. What field has been used for the axis of the graph?
+**3. What field has been used for the axis of the graph?**
 DESC_REGION
 
-**4. And in the legend?
+**4. And in the legend?**
 DESC_INDICATOR
 
-**5. And in the values?
+**5. And in the values?**
 Average of IN_VALUE
