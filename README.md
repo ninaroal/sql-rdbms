@@ -160,49 +160,57 @@ The following objects have been used:
 
 As we can see in the following image we have used:
 a. START: Jobs always start with a START object that does not need to be configured. As seen above, the jump has a yellow padlock, which indicates that the jump is an unconditional execution, that is, the destination is executed regardless of the result of the previous entry.
+
 b. Transformation: the three transformations made in the previous steps (staging, dimensions and data mart fact table) were added. For this, the path where the transformations were saved was indicated:
 
+![grafik](https://user-images.githubusercontent.com/84467687/193497390-adbfe63d-6949-4546-8717-ad13d14e6c0e.png)
  
-
 c.	Write To Log: we execute an execution jump after success that we have called SUCESS. This step writes a message to the Log. Looking at the first image with the “ETL JOB” note, you can see that there is a green check mark above the jump arrow, which indicates that the destination is executed only if the previous job was successful.
  
+![grafik](https://user-images.githubusercontent.com/84467687/193497398-bd0beaa9-4745-407e-aa04-b98a364536b7.png)
 
 d.	Write To Log: Finally, a run jump was applied after the failure that we have called ERROR. This step also writes a message to the Log. The red “X” symbol above the jump arrow indicates that the destination is executed only if the previous job has failed.
 
+![grafik](https://user-images.githubusercontent.com/84467687/193497417-f8c28741-5f33-4cf2-a3ab-288f0602c184.png)
  
-
 The objects that we have used to create the job are found in the “General” and “Utility” menus:
 
- 
- 
+![grafik](https://user-images.githubusercontent.com/84467687/193497425-a87aec3a-0510-4956-97a2-c8c8f436734b.png)
+![grafik](https://user-images.githubusercontent.com/84467687/193497443-3c4dd4f7-f153-4b5b-97d9-f877470a85fd.png)
 
 When executing the job we obtain the following log. As you can see, the job was executed successfully and you can read the custom message that was configured in the previous step.
 
- 
+![grafik](https://user-images.githubusercontent.com/84467687/193497485-b30b9604-a505-48bc-80c5-1a8e35ab4355.png)
 
 5) Answer the following questions by performing SQL queries:
--- How many countries belong to each income group?
-Query:
- 
+**How many countries belong to each income group?**
+**Query:** **See Script here**
+![grafik](https://user-images.githubusercontent.com/84467687/193497606-e27513c1-b222-49ef-a4fc-9874addc8c8a.png)
 
-Result:
- 
+**Result:**
+![grafik](https://user-images.githubusercontent.com/84467687/193497613-3c0f9c1c-c1ec-4784-b149-6464b8900844.png)
 
--- How many metrics are there, that have non-zero value in the year 2000?
-Query:
+**How many metrics are there, that have non-zero value in the year 2000?**
+**Query:** **See Script here**
+![grafik](https://user-images.githubusercontent.com/84467687/193497627-e3f74f97-f24a-471a-8790-fcbbb9990c8f.png)
  
-RESULT:
- 
+**Result:**
+![grafik](https://user-images.githubusercontent.com/84467687/193497637-1e5ca5e5-8ba7-4889-891e-f517476f8f41.png)
+
 
 6) Create a report in Power BI accessing the information of the newly loaded datamart
 - Indicate the structure of the data model. Define the tables, their relationships and cardinalities.
 As a first step, we import the data from the SQL Server database into PowerBI. The easiest method to do this is by pressing the “SQL Server” Button on the Start menu.
 
- 
+![grafik](https://user-images.githubusercontent.com/84467687/193497768-a7f48517-ff0a-4763-be45-8f45a2f5729a.png)
 
 Then we write the server and the name of the database to extract (this last step is optional).
  
+![grafik](https://user-images.githubusercontent.com/84467687/193497785-0802f5c6-66fc-46f0-9da1-7d7bd58a5503.png)
+
 Then all the tables in the database will be displayed. We will choose the ones we want to use, which in this case are the two dimension tables and the fact table. Before loading the data, it is recommended to transform it in the event that, for example, a column is added to the table or the data format type of a column is changed. This step is finished by uploading the data to PowerBI.
+
+![grafik](https://user-images.githubusercontent.com/84467687/193497802-4a5f35e9-1ea9-4ab5-b5b8-0b916436776d.png)
  
 Once the data has been loaded, to view and modify the structure of the data model, select the “Model” button on the left bar.
 In the first instance we observe three tables: DIM_METRICA, DIM_COUNTRY and FACT_WWBI. Now relationships will be created between them. To do this, select the button in the start menu, in the Relations section.
