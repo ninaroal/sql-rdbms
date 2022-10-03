@@ -1,5 +1,16 @@
 # __CREATION OF A BUSINESS INTELLIGENCE SYSTEM__
 
+## Summary of the project:
+- Creation of Staging Database and tables in SQL-Server <a href="https://github.com/ninaroal/sql-rdbms/edit/main/README.md?plain=1#L23" title="Title"> -> HERE</a>
+- ETL of the CSV files to a staging DB using ETL Open Source "Pentaho" (PDI) <a href="https://github.com/ninaroal/sql-rdbms/edit/main/README.md?plain=1#L90" title="Title"> -> HERE</a>
+- Creation of Datamart and tables in SQL-Server <a href="https://github.com/ninaroal/sql-rdbms/edit/main/README.md?plain=1#L101" title="Title"> -> HERE</a>
+- Aplying transformations to load the datamart using PDI <a href="https://github.com/ninaroal/sql-rdbms/edit/main/README.md?plain=1#L117" title="Title"> -> HERE</a>
+- Performing SQL queries in SQL-Server <a href="https://github.com/ninaroal/sql-rdbms/edit/main/README.md?plain=1#L197" title="Title"> -> HERE</a>
+- Creation of a report in Power BI accessing the information of the loaded datamart <a href="https://github.com/ninaroal/sql-rdbms/edit/main/README.md?plain=1#L213" title="Title"> -> HERE</a>
+- Creation of Visuals/Dashboards in PowerBI <a href="https://github.com/ninaroal/sql-rdbms/edit/main/README.md?plain=1#L241" title="Title"> -> HERE</a>
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 **1. What data will be used?**
 
 This dataset is based on World Bank Group data. Specifically, the set of indicators on global bureaucracy will be used. We have two CSV files, one called “WWBIData” that contains the country names and codes, indicator names and codes, as well as the values of the indicators by year, starting with the year 2000 up to the year 2016. Then there is the file “WWBICountry”, which contains more detailed information on countries, regions, 2-alpha-code, income group, among others.
@@ -109,7 +120,7 @@ A transformation is first created with the connection to the DB "WWBI_DWH" in SS
 ![grafik](https://user-images.githubusercontent.com/84467687/193497109-798fa10c-a9b6-4501-9c8d-6f9022485974.png)
 
 **3.3) Answer the following questions:**
-- How was the “dim_metrica” table loaded? Where are you from?
+- How was the “dim_metrica” table loaded and where does the origin comes from?
 The DIM_METRICA table has been loaded through a "Table Entry", whose origin comes from the staging database, specifically from the STG_DATA table.
 
  ![grafik](https://user-images.githubusercontent.com/84467687/193497152-449fb0e3-7edf-4a72-bb61-ddf07520b6c6.png)
